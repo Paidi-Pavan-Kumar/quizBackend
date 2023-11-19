@@ -1,3 +1,4 @@
+const ejs = require('ejs');
 const express=require('express');
 var app=express();
 app.set("viewengine",ejs);
