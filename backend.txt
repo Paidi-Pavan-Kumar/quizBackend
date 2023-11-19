@@ -1,0 +1,27 @@
+quizzoquizz
+    instructorDB
+        name
+        email
+        password
+    
+    studentDB
+        name
+        email
+        password
+
+    testDetailsDB
+        id
+        testName
+        testCode
+        testStartTime
+        testEndTime
+        resultsTime
+        emailAccounts
+
+    testDB
+        instructorID
+        testCode
+        questions
+        options
+        answer
+
