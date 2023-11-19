@@ -8,8 +8,6 @@ const cors=require('cors');
 
 const instructorRoute=require("./controller/instructorRouter");
 const studentRoute = require('./controller/studentRouter');
-const testDetailsRoute=require('./controller/testDetailsRouter');
-const testRoute = require('./controller/testRouter');
 const quizRoute=require('./controller/quizRouter');
 const resultRoute=require('./controller/resultRouter')
 
@@ -22,8 +20,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 app.use("/Route",instructorRoute);
 app.use("/Route",studentRoute);
-app.use("/Route",testDetailsRoute);
-app.use("/Route",testRoute);
 app.use("/Route",quizRoute);
 app.use("/Route",resultRoute);
 
