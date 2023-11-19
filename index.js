@@ -1,5 +1,6 @@
 const express=require('express');
 var app=express();
+app.set("viewengine",ejs);
 
 const mongoose=require("mongoose");
 const bodyParser=require("body-parser");
