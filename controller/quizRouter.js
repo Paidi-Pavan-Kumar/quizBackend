@@ -14,7 +14,7 @@ quizRoute.post("/createQuiz", (req, res) => {
 
             try {
                 const quizDetails = new quizSchema({
-                    instructorID: instructorID,
+                    instructorID: id,
                     testName: testName,
                     testCode: testCode,
                     testStartTime: new Date(testStartTime),
@@ -31,8 +31,8 @@ quizRoute.post("/createQuiz", (req, res) => {
                 });
                 res.json(quizDetails);
             }
-            catch {
-
+            catch(err) {
+                console.log(err)
             }
         }
     })

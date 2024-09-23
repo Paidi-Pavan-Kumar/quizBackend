@@ -7,11 +7,13 @@ const studentSchema=require('../model/studentSchema');
 studentRoute.post("/createStudent",(req,res)=>{
     studentSchema.create(req.body,(err,data)=>{
         if(err){
+            console.log(err)
             return err
         }
         else{
             try {
                 const data = studentSchema(req.body);
+                console.log("User Craeted")
                 res.json(data);
             } catch (err) {
                 res.status(500).json({ error: err.message });

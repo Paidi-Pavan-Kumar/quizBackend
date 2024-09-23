@@ -13,7 +13,7 @@ const quizRoute=require('./controller/quizRouter');
 const resultRoute=require('./controller/resultRouter')
 
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://leelasumanth:11079@cluster0.jhri1bn.mongodb.net/userDB");
+mongoose.connect("mongodb+srv://PaidiPavanKumar:TqCun5PqJAA3FuoC@cluster0.wycgs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 var db=mongoose.connection;
 app.use(bodyParser.json());
