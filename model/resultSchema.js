@@ -18,5 +18,5 @@ const resultSchema=mongoose.Schema({
 },{
     collection:'testResults'
 })
-
+ 
 module.exports=mongoose.model("resultSchema",resultSchema);

@@ -47,7 +47,7 @@ studentRoute.route("/updateStudent/:id")
             return err;
         }
         else{
-            res.json(data);
+            res.json(data);  
         }
     })
 })

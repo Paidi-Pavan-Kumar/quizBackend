@@ -9,3 +9,4 @@ const studentSchema=mongoose.Schema({
 })
 
 module.exports=mongoose.model("studentSchema",studentSchema);
+ 

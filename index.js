@@ -14,7 +14,7 @@ const resultRoute=require('./controller/resultRouter')
 
 mongoose.set('strictQuery', true);
 mongoose.connect("mongodb+srv://PaidiPavanKumar:TqCun5PqJAA3FuoC@cluster0.wycgs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
-
+ 
 var db=mongoose.connection;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));

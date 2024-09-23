@@ -7,7 +7,7 @@ const quizRoute = express.Router();
 quizRoute.post("/createQuiz", (req, res) => {
     quizSchema.create(req.body, (err, data) => {
         if (err) {
-            return err;
+            return err;  
         }
         else {
             const { id, testName, testCode, testStartTime, testEndTime, resultsTime, users, question, option1, option2, option3, option4, answer } = req.body;

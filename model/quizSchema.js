@@ -15,7 +15,7 @@ const quizSchema=mongoose.Schema({
     "option4":{type:Array},
     "answer":{type:Array}
 },{
-    collection:"test"
+    collection:"test"  
 })
 
 module.exports=mongoose.model("quizSchema",quizSchema);

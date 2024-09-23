@@ -7,7 +7,7 @@ const resultRoute=express.Router();
 resultRoute.post("/uploadResult",(req,res)=>{
     resultSchema.create(req.body,(err,data)=>{
         if(err){
-            return err;
+            return err;  
         }
         else{
             try {

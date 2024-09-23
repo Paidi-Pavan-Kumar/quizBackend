@@ -8,4 +8,4 @@ const instructorSchema=new mongoose.Schema({
     collection:"instructor"
 })
 
-module.exports=mongoose.model("instructorSchema",instructorSchema);
+module.exports=mongoose.model("instructorSchema",instructorSchema); 

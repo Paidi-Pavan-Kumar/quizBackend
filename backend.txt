@@ -12,7 +12,7 @@ quizzoquizz
     testDetailsDB
         id
         testName
-        testCode
+        testCode 
         testStartTime
         testEndTime
         resultsTime

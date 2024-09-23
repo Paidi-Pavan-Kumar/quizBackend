@@ -7,6 +7,7 @@ instructorRoute.post('/createInstructor',(req,res)=>{
     instructorSchema.create(req.body,(err,data)=>{
         if(err){
             return err;
+        
         }
         else{
             try {
